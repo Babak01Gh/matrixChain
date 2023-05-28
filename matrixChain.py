@@ -1,7 +1,13 @@
-m1 = (20,2)
-m2 = (2,30)
-m3 = (30,12)
-m4 = (12,8)
+chainOfMatrices = []
+numberOfMatrices = int(input('Enter the number of matrices : '))
+while numberOfMatrices:
+    try:
+        dimInput = input(f'dimention of matrix like 3*2 : ')
+        dim = dimInput.split('*')
+        chainOfMatrices.append(tuple([int(dim[0]),int(dim[1])]))
+        numberOfMatrices-=1
+    except:
+        print('There is an error in your input...')
 w,r = [],[]
 
 def matrixChain(matrixList):
@@ -30,8 +36,6 @@ def test(matrixList,i,j):
             retk = k
     return (oops , retk)
 
-matrixChain([m1,m2,m3,m4])
-
 def showHow(i,j):
     if i==j:
         print(f'M{i}',end='')
@@ -41,5 +45,3 @@ def showHow(i,j):
         showHow(i, k)
         showHow(k+1, j)
         print(')',end='')
-
-showHow(0, 3)
