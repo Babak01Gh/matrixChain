@@ -49,5 +49,5 @@ while numberOfMatrices:
 w,r = [],[]
 
 minMult(chainOfMatrices)
-print(numpy.array(w))
-print(numpy.array(r))
+print('\n',numpy.array(w))
+print('\n',numpy.array(r))
