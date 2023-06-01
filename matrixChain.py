@@ -36,7 +36,13 @@ def showMults(i,j):
         showMults(k+1, j)
         print(')',end='')
         
-chainOfMatrices = []
+chainOfMatrices = [
+    (3,3),
+    (3,5),
+    (5,2),
+    (2,6),
+    (6,3)
+]
 numberOfMatrices = int(input('Enter the number of matrices : '))
 while numberOfMatrices:
     try:
