@@ -12,7 +12,7 @@ def minMult(matrixChain):
             else:
                 mults,kWithMin = minKgiver(matrixChain,i,j)
                 w[i][j] = mults
-                r[i][j] = kWithMin
+                r[i][j] = kWithMin+1
     showMults(0, n-1)
     
                 
@@ -32,8 +32,8 @@ def showMults(i,j):
     else:
         k = r[i][j]
         print('(',end='')
-        showMults(i, k)
-        showMults(k+1, j)
+        showMults(i, k-1)
+        showMults(k, j)
         print(')',end='')
         
 chainOfMatrices = []
