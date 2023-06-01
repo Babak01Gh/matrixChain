@@ -36,13 +36,7 @@ def showMults(i,j):
         showMults(k+1, j)
         print(')',end='')
         
-chainOfMatrices = [
-    (3,3),
-    (3,5),
-    (5,2),
-    (2,6),
-    (6,3)
-]
+chainOfMatrices = []
 numberOfMatrices = int(input('Enter the number of matrices : '))
 while numberOfMatrices:
     try:
@@ -54,6 +48,7 @@ while numberOfMatrices:
         print('There is an error in your input...')
 w,r = [],[]
 
+print('\n')
 minMult(chainOfMatrices)
-print('\n',numpy.array(w))
+print('\n\n',numpy.array(w))
 print('\n',numpy.array(r))

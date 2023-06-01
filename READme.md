@@ -16,5 +16,29 @@ chainOfMatrices = [
     (2,6),
     (6,3)
 ]
+```
 
+**output**
+```
+minMult(chainOfMatrices)
+
+result order :
+
+    ((M0(M1M2))(M3M4))
+
+multiples matrix :
+
+     [  0  45  48  84 102]
+     [  0   0  30  66  84]
+     [  0   0   0  60  66]
+     [  0   0   0   0  36]
+     [  0   0   0   0   0]
+
+R matrix :
+
+     [0 0 0 2 2]
+     [0 0 1 2 2]
+     [0 0 0 2 2]
+     [0 0 0 0 3]
+     [0 0 0 0 0]
 ```
